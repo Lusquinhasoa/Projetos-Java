@@ -25,7 +25,7 @@ public static void main(String[]args){
 
             System.out.println("Primeiro: " + n1 + " ultimo: " + n4 + " maior: " + n2);
 
-        } if(n3> n1 && n3 > n2 && n3 > n4) {
+        } else if(n3> n1 && n3 > n2 && n3 > n4) {
 
             System.out.println("Primeiro: " + n1 + " ultimo: " + n4 + " maior: " + n3);
 
