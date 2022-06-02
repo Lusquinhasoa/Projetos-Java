@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex3{
+public class At4{
 
 public static void main(String[]args){
     Scanner in = new Scanner(System.in);
@@ -14,14 +14,14 @@ public static void main(String[]args){
     System.out.println("Informe um terceiro valor: ");
     int n3 = in.nextInt();
 
-    if(n1>n2 && n1>n3){
-    System.out.println("O número " + n1 + " é o maior"); 
+    if(n1<n2 && n1<n3){
+    System.out.println("A soma é dos dois maiores números é igual a " + (n2+n3)); 
     }
-    else if(n2>n1 && n2>n3){
-    System.out.println("O número " + n2 + " é o maior");   
+    else if(n2<n1 && n2<n3){
+    System.out.println("A soma é dos dois maiores números é igual a " + (n1+n3) );   
     }
     else{
-        System.out.println("O número " + n3 + " é o maior");
+        System.out.println("A soma é dos dois maiores números é igual a " + (n1+n2));
     }
     in.close();
 }
