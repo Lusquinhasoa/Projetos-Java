@@ -4,18 +4,35 @@ public class At23 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Informe 20 números ");
-        double num1 = Integer.parseInt("0");
-    
-        for (int i = 0; i<20;i++){
-            System.out.println("Informe o " + (i+1) + " ° número");
-            num1 += in.nextDouble();
+        int total = 20;
+
+        int numero = 0;
+
+        int maiorNum = 0;
+
+        int menorNum = 0;
+
+        for(int i = 0; i < total; i++){
+
+            System.out.print("Informe um número: ");
+
+            int nx = in.nextInt();
+
+            if(i == 0){
+			menorNum = nx;
+            maiorNum = nx;
+			}
+
+            if(nx > maiorNum){
+                maiorNum = nx;
+                
+            }
+            if(nx < menorNum){
+                menorNum = nx;
+            }
         }
+        System.out.println("O maior número informado é o: " + maiorNum + ", e o menor número informado é o: " + menorNum);
 
-        
-        System.out.println("O maior número é: " + (num1));
-
-        in.close();
     }
 }
 

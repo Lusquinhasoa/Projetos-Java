@@ -15,6 +15,20 @@ public class At24 {
         int j2 = in.nextInt();
         in.close();
 
+        if(j1 > j2 && g1 < g2){
+            System.out.println("A soma das idades do javali mais velho com a girafa mais nova é de: " + (j1 + g1));
+            System.out.println("O produto das idades do javali mais novo com a girafa mais velha é de: " + (j2 + g2));
+        } else if(j1 > j2 && g1 > g2){
+            System.out.println("A soma das idades do javali mais velho com a girafa mais nova é de: " + (j1 + g2));
+            System.out.println("O produto das idades do javali mas novo com a girafa mais velha é de: " + (j2 + g1));
+        } else if(j2 > j1 && g1 > g2){
+            System.out.println("A soma das idades do javali mais velho com a girafa mais nova é de: " + (j2 + g2));
+            System.out.println("O produto das idades do javali mais novo com a girafa mais velha é de: " + (j1 + g1 ));
+        } else if(j2 > j1 && g1 < g2){
+            System.out.println("A soma das idades do javali mais velho com a girafa mais nova é de: " + (j2 + g1));
+            System.out.println("O produto das idades do javali mais novo com a girafa mais velha é de: " + (j1 + g2));
+        }
+        in.close();
     }
 }
 

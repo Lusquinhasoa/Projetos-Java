@@ -5,17 +5,20 @@ public class At9{
 public static void main(String[]args){
     Scanner in = new Scanner(System.in);
 
-    System.out.println("Informe 6 números ");
+    int numero = 0;
+    int numeros = 0;
+    int cont = 0;
 
-    double n1 = Integer.parseInt("0");
+    while (cont < 6){
+        System.out.println("Informe um numero");
+        numero = in.nextInt();
+        System.out.println("O número informado foi: " + numero);
 
-
-    for (int i = 0; i<6;i++){
-        System.out.println("Informe o " + (i+1) + " ° número");
-        n1 += in.nextDouble();
+        if(numero < 72){
+            numeros += numero;
+        }
+        cont++;
     }
-    System.out.println("A soma é : " + (n1));
-
-    in.close();
-    }
+    System.out.println("A soma dos números informados é de: " + numeros);
+}   
 }
